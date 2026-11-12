@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krunch Andino | Brochetas de Frutas Peruanas Crocantes</title>
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Enlace al archivo CSS separado -->
+  <link rel="stylesheet" href="ept.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER / NAVBAR ================= -->
+  <header>
+    <div class="nav-container">
+      <!-- LOGO DE TU MARCA INSERTADO -->
+      <a href="#" class="logo-slot">
+        <div class="logo-box" style="border: none; background: transparent;">
+          <img src="logo.png" alt="Logo Krunch Andino">
+        </div>
+        <div class="logo-text">Krunch <span>Andino</span></div>
+      </a>
+
+      <nav>
+        <ul>
+          <li><a href="#sabores">Nuestros Sabores</a></li>
+          <li><a href="#preparacion">¿Cómo se hace?</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contacto" class="btn btn-yellow">Contáctanos</a>
+        <a href="#sabores" class="btn btn-primary">Pedir Ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <!-- ELEMENTOS FLOTANTES (FRUTAS, PALITOS Y TOPPINGS) -->
+    <div class="floating-item float-1" title="Fresa Peruana">🍓</div>
+    <div class="floating-item float-2" title="Aguaymanto">🍊</div>
+    <div class="floating-item float-3" title="Piña Golden">🍍</div>
+    <div class="floating-item float-4" title="Mango y Uva">🥭</div>
+    <div class="floating-item float-5" title="Brocheta Crocante">🍢</div>
+    <div class="floating-item float-6" title="Quinua y Cacao">✨</div>
+
+    <span class="hero-badge">🇵🇪 Snack Peruano Saludable • 100% Fruta Fresca</span>
+    <h1 class="hero-title">
+      Frutas peruanas con un <span class="highlight-yellow">Krunch</span> irresistible.
+    </h1>
+    <p class="hero-subtitle">
+      Brochetas artesanales de 3 frutas locales frescas bañadas en una capa ultrafina de caramelo cristalizado y coronadas con quinua pop, cacao y coco tostado.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#sabores" class="btn btn-primary">Explorar los 3 Sabores</a>
+      <button class="btn btn-outline" onclick="playCrunchSound()">🔊 Escuchar el Krunch</button>
+    </div>
+
+    <!-- PRIMERA IMAGEN PRINCIPAL INSERTADA: comiendo.jfif -->
+    <div class="hero-image-showcase">
+      <div class="image-placeholder-frame" style="padding: 12px; border-style: solid;">
+        <img src="comiendo.jfif" alt="Disfrutando brochetas Krunch Andino">
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BANDA PROMOCIONAL ================= -->
+  <div class="ticker-bar">
+    ★ 3 FRUTAS PERUANAS POR BROCHETA ★ CARAMELO CRISTALIZADO ULTRAFINO ★ TOPPINGS DE QUINUA POP Y CACAO ★
+  </div>
+
+  <!-- ================= SECCIÓN MENÚ DE 3 SABORES ================= -->
+  <section id="sabores" class="section">
+    <div class="section-header">
+      <span class="section-tag">Menú Exclusivo</span>
+      <h2 class="section-title">Nuestras 3 Combinaciones Estrella</h2>
+      <p class="section-desc">Cada brocheta combina 3 frutas peruanas seleccionadas para equilibrar acidez, frescura y el toque crocante perfecto.</p>
+    </div>
+
+    <div class="flavors-grid">
+      
+      <!-- SABOR 1: SOL DEL ANDE -->
+      <article class="flavor-card">
+        <!-- ESPACIO 3: FOTO SABOR 1 -->
+        <div class="product-img-slot">
+          <!-- Reemplazar con: <img src="sol-del-ande.jpg" alt="Sol del Ande"> -->
+          <div class="emoji-med">🍊🍓🍊</div>
+          <span class="placeholder-label">Foto: Sol del Ande</span>
+        </div>
+        <span class="topping-pill">+ Topping: Quinua Pop Crocante</span>
+        <h3>1. Sol del Ande</h3>
+        <div class="fruits-list">
+          <span class="fruit-chip">Aguaymanto</span>
+          <span class="fruit-chip">Fresa</span>
+          <span class="fruit-chip">Mandarina</span>
+        </div>
+        <p class="flavor-desc">
+          El equilibrio ideal entre el ácido tropical del aguaymanto, el dulzor de la fresa y la frescura cítrica de la mandarina con doble crunch de quinua andina.
+        </p>
+        <div class="card-footer">
+          <span class="price">S/ 5.00</span>
+          <button class="btn btn-primary" onclick="addToCart('Sol del Ande', 5)">+ Agregar</button>
+        </div>
+      </article>
+
+      <!-- SABOR 2: CACAO & ALTURA -->
+      <article class="flavor-card">
+        <!-- ESPACIO 4: FOTO SABOR 2 -->
+        <div class="product-img-slot">
+          <!-- Reemplazar con: <img src="cacao-altura.jpg" alt="Cacao y Altura"> -->
+          <div class="emoji-med">🍌🍓🍊</div>
+          <span class="placeholder-label">Foto: Cacao & Altura</span>
+        </div>
+        <span class="topping-pill">+ Topping: Nibs de Cacao Peruano</span>
+        <h3>2. Cacao & Altura</h3>
+        <div class="fruits-list">
+          <span class="fruit-chip">Plátano</span>
+          <span class="fruit-chip">Fresa</span>
+          <span class="fruit-chip">Aguaymanto</span>
+        </div>
+        <p class="flavor-desc">
+          La suavidad dulce del plátano y la intensidad del aguaymanto se fusionan con trocitos aromáticos de cacao peruano tostado sobre caramelo vidrio.
+        </p>
+        <div class="card-footer">
+          <span class="price">S/ 5.00</span>
+          <button class="btn btn-primary" onclick="addToCart('Cacao & Altura', 5)">+ Agregar</button>
+        </div>
+      </article>
+
+      <!-- SABOR 3: BRISA TROPICAL -->
+      <article class="flavor-card">
+        <!-- ESPACIO 5: FOTO SABOR 3 -->
+        <div class="product-img-slot">
+          <!-- Reemplazar con: <img src="brisa-tropical.jpg" alt="Brisa Tropical"> -->
+          <div class="emoji-med">🍍🍇🥭</div>
+          <span class="placeholder-label">Foto: Brisa Tropical</span>
+        </div>
+        <span class="topping-pill">+ Topping: Coco Rallado Tostado</span>
+        <h3>3. Brisa Tropical</h3>
+        <div class="fruits-list">
+          <span class="fruit-chip">Piña Golden</span>
+          <span class="fruit-chip">Uva Verde</span>
+          <span class="fruit-chip">Mango Firme</span>
+        </div>
+        <p class="flavor-desc">
+          Una explosión jugosa y refrescante de frutas tropicales del norte y selva peruana, coronada con coco rallado tostado al instante.
+        </p>
+        <div class="card-footer">
+          <span class="price">S/ 5.00</span>
+          <button class="btn btn-primary" onclick="addToCart('Brisa Tropical', 5)">+ Agregar</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================= SECCIÓN PREPARACIÓN ================= -->
+  <section id="preparacion" class="section">
+    <div class="process-banner">
+      <div>
+        <span class="process-tag">Artesanal y Fresco</span>
+        <h2>El secreto de nuestros palitos crocantes</h2>
+        <p class="process-text">
+          No usamos colorantes artificiales ni conservantes. Solo fruta fresca seleccionada, palitos de bambú ecológicos y un baño rápido de caramelo cristalizado.
+        </p>
+        <ul class="process-steps">
+          <li><span class="step-num">1</span> Seleccionamos y secamos 3 frutas peruanas frescas por palito.</li>
+          <li><span class="step-num">2</span> Sumergimos en almíbar a punto exacto para crear una capa fina tipo vidrio.</li>
+          <li><span class="step-num">3</span> Espolvoreamos quinua pop, nibs de cacao o coco tostado antes de enfriar.</li>
+        </ul>
+      </div>
+
+      <!-- ESPACIO 6: FOTO DE PREPARACIÓN O PALITOS -->
+      <div class="process-img-slot">
+        <!-- Reemplazar con: <img src="preparacion.jpg" alt="Preparación de brochetas"> -->
+        <div class="emoji-med">🍢✨🍯</div>
+        <strong>ESPACIO PARA FOTO DEL PROCESO</strong>
+        <p class="process-note">(Ej: bañando la brocheta o los palitos listos con toppings)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECCIÓN CONTACTO (WHATSAPP E INSTAGRAM) ================= -->
+  <section id="contacto" class="section">
+    <div class="section-header">
+      <span class="section-tag">Haz tu pedido o consulta</span>
+      <h2 class="section-title">¡Conecta con Krunch Andino!</h2>
+      <p class="section-desc">Escríbenos directamente por WhatsApp para pedir tus brochetas o síguenos en Instagram para ver nuestros videos crocantes.</p>
+    </div>
+
+    <div class="contact-grid">
+      <!-- TARJETA WHATSAPP -->
+      <a href="https://wa.me/51991202999?text=Hola%20Krunch%20Andino!%20Quiero%20pedir%20unas%20brochetas%20crocantes." target="_blank" class="contact-card whatsapp-card">
+        <div class="contact-icon">💬</div>
+        <div class="contact-info">
+          <span class="contact-label">Pedidos Rápidos por WhatsApp</span>
+          <h3>+51 991 202 999</h3>
+          <p>Haz clic aquí para enviarnos un mensaje directo y coordinar tu entrega.</p>
+        </div>
+        <span class="btn btn-primary">Escribir al WhatsApp →</span>
+      </a>
+
+      <!-- TARJETA INSTAGRAM -->
+      <a href="https://instagram.com/krunchandino" target="_blank" class="contact-card instagram-card">
+        <div class="contact-icon">📸</div>
+        <div class="contact-info">
+          <span class="contact-label">Síguenos en Instagram</span>
+          <h3>@krunchandino</h3>
+          <p>Mira nuestros reels ASMR, nuevos sabores y promociones para estudiantes.</p>
+        </div>
+        <span class="btn btn-yellow">Ir a Instagram →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= BOTÓN FLOTANTE DE PEDIDO ================= -->
+  <div id="cartToast" class="cart-toast" onclick="checkoutWhatsApp()">
+    <span>🍢 Tu Pedido: <strong id="cartCount">0</strong> brochetas (<strong id="cartTotal">S/ 0.00</strong>)</span>
+    <span class="cart-badge-btn">Pedir por WSP →</span>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="logo-text footer-logo">Krunch <span>Andino</span></div>
+    <p class="footer-desc">
+      Emprendimiento escolar de innovación gastronómica peruana. Frutas frescas, superalimentos y el mejor crunch.
+    </p>
+    <div class="footer-socials">
+      <a href="https://wa.me/51991202999" target="_blank">WhatsApp: 991 202 999</a> • 
+      <a href="https://instagram.com/krunchandino" target="_blank">Instagram: @krunchandino</a>
+    </div>
+    <p class="footer-copy">© 2026 Krunch Andino Adriano Flores Estremadoyro  </p>
+  </footer>
+
+  <!-- ================= JAVASCRIPT INTERACTIVO ================= -->
+  <script>
+    let cart = [];
+
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      updateCartUI();
+      playCrunchSound();
+    }
+
+    function updateCartUI() {
+      const toast = document.getElementById('cartToast');
+      const countEl = document.getElementById('cartCount');
+      const totalEl = document.getElementById('cartTotal');
+      
+      toast.style.display = 'flex';
+      countEl.textContent = cart.length;
+      
+      let total = 0;
+      const combos = Math.floor(cart.length / 3);
+      const remainder = cart.length % 3;
+      total = (combos * 13.50) + (remainder * 5.00);
+      
+      totalEl.textContent = `S/ ${total.toFixed(2)}`;
+    }
+
+    function checkoutWhatsApp() {
+      if (cart.length === 0) return;
+      const total = document.getElementById('cartTotal').textContent;
+      const itemsText = cart.map(i => `- ${i.name}`).join('%0A');
+      const message = `Hola Krunch Andino! Quiero hacer el siguiente pedido:%0A${itemsText}%0A*Total:* ${total}`;
+      window.open(`https://wa.me/51991202999?text=${message}`, '_blank');
+    }
+
+    function playCrunchSound() {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const bufferSize = ctx.sampleRate * 0.12;
+        const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+        const data = buffer.getChannelData(0);
+        for (let i = 0; i < bufferSize; i++) {
+          data[i] = (Math.random() * 2 - 1) * Math.exp(-i / (ctx.sampleRate * 0.03));
+        }
+        const noise = ctx.createBufferSource();
+        noise.buffer = buffer;
+        const filter = ctx.createBiquadFilter();
+        filter.type = 'bandpass';
+        filter.frequency.value = 1800;
+        noise.connect(filter);
+        filter.connect(ctx.destination);
+        noise.start();
+      } catch (err) {}
+    }
+  </script>
+</body>
+</html>
